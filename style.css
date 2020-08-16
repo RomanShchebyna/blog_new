@@ -152,6 +152,10 @@ body{
         display: block;
         padding: 9px;
     }
+
+    .search input{
+        position: static;
+    }
     
     
 }
