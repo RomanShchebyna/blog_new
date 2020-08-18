@@ -404,15 +404,6 @@ background-color: #3a454d;
 }
 
 
-
-
-
-
-
-
-
-
-
 .img{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -510,6 +501,8 @@ background-color: #3a454d;
     justify-content: space-between;
     align-items: center;
     height: 440px;
+    margin-bottom: 25px;
+
 }
 
 .conteiner-features h3{
@@ -521,8 +514,28 @@ background-color: #3a454d;
 }
 .conteiner-features p{
     text-align: left;
+    
+    
  
 }
+
+/* stayInTouch */
+.stayInTouch{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.contact p{
+margin: 15px 0px;
+}
+.contact h4{
+    margin: 15px 0px;
+    }
+
+    .maps{
+        overflow: auto;
+    }
 
 
 
@@ -582,6 +595,11 @@ background-color: #3a454d;
     .col-md-7{
         flex:0 0 58.333%;
         max-width: 58.333%;
+    }
+
+    .col-md-6{
+        flex:0 0 50%;
+        max-width: 50%;
     }
     .col-md-2{
         flex:0 0 16.6667%;
