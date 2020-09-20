@@ -106,3 +106,8 @@ let closeBtn=document.querySelector(".btn-close")
     
     OpenModalbtn.addEventListener("click",OpenModalSend);
     CloseModalbtn.addEventListener("click",CloseModalSend);
+
+
+
+
+    let timerId =setTimeout(OpenModal,10000);

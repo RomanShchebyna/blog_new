@@ -755,7 +755,7 @@ border:transparent;
 
 
 .btn-close-message{
-    
+    cursor: pointer;
       display: inline-block;  
     
         
