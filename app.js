@@ -29,11 +29,7 @@ let closeBtn=document.querySelector(".btn-close")
         autorization.classList.remove("hide")
     }
 
-    function OpenModalSend(){
-        //  e.preventDefault();
-        autorization.classList.add("show");
-        autorization.classList.remove("hide")
-    }
+ 
 
     
     function closeModal(){
@@ -60,9 +56,53 @@ let closeBtn=document.querySelector(".btn-close")
      
      window.addEventListener("scroll",showModalByscroll)
     
-     let openmodalbtn= document.querySelector(".openmodal button");
-     console.log(openmodalbtn);
+     
+     
+  
+     
+     let OpenModalbtn= document.querySelector(".openmodal button");
+     console.log(OpenModalbtn);
 
-     openmodalbtn.addEventListener("click",OpenModal);
+    let SendMessage=document.querySelector(".form");
+    console.log(SendMessage)
+
+
+
+       function OpenModalSend(){
+        //   e.preventDefault();
+        SendMessage.classList.add("show");
+        SendMessage.classList.remove("hide");
+        OpenModalbtn.classList.add("hide");
+        OpenModalbtn.classList.remove("show");
+
+    }
+
+    function CloseModalSend(){
+        //   e.preventDefault();
+        SendMessage.classList.add("hide");
+        SendMessage.classList.remove("show");
+        OpenModalbtn.classList.add("show");
+        OpenModalbtn.classList.remove("hide");
+        document.querySelectorAll('input, textarea').forEach(el=>el.value = '');
+    }
+
+   
+
 
      
+
+      let CloseModalbtn=document.querySelector(".btn-close-message");
+      console.log(CloseModalbtn)
+    //  let formmesage= document.querySelector(".form");
+    //  console.log(formmesage);
+
+    //  function OpenModalmessage(){
+    //     //  e.preventDefault();
+    //     formmesage.classList.add("show");
+    //     formmesage.classList.remove("hide")
+    // }
+
+
+    
+    OpenModalbtn.addEventListener("click",OpenModalSend);
+    CloseModalbtn.addEventListener("click",CloseModalSend);
